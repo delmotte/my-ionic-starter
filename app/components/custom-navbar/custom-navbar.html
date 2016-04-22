@@ -1,0 +1,19 @@
+<ion-navbar *navbar>
+
+    <button menuToggle showWhen="ios">
+        <ion-icon name="person"></ion-icon>
+    </button>
+
+    <ion-title>{{title || ''}}</ion-title>
+
+    <ion-buttons end>
+        <button hideWhen="ios">
+            <ion-icon name="person"></ion-icon>
+        </button>
+        <button (click)="showMessages()">
+            <ion-icon name="mail"></ion-icon>
+            {{data.length}}
+        </button>
+    </ion-buttons>
+
+</ion-navbar>
